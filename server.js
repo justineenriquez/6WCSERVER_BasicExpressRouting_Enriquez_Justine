@@ -1,17 +1,18 @@
 // Author: Enriquez, Justine Paul A.
 // Activity: Basic Express Routing Using GET
+// WD-303
 
 const express = require('express');
 const path = require('path');
+
 const app = express();
 const PORT = 3000;
 
 // Data for menu
 const menu = [
-  { id: 1, name: 'Espresso',   category: 'hot',  price: 90,  favorite: false, image: '/images/espresso.jpg',   description: 'A rich and bold coffee shot, perfect for a quick caffeine boost.' },
-  { id: 2, name: 'Cappuccino', category: 'hot',  price: 120, favorite: true,  image: '/images/cappuccino.jpg', description: 'A classic Italian coffee drink with equal parts espresso, steamed milk, and froth.' },
-  { id: 3, name: 'Latte',      category: 'hot',  price: 130, favorite: true,  image: '/images/latte.jpg',      description: 'A smooth and creamy coffee made with espresso and steamed milk, topped with a light layer of foam.' },
-  { id: 4, name: 'Americano', category: 'iced', price: 180, favorite: true,  image: '/images/americano.jpg',  description: 'A refreshing coffee drink made by pouring a fresh shot of espresso over cold water and ice' }
+  { id: 1, name: 'Cappuccino', category: 'hot',  price: 120, favorite: true,  image: '/images/cappuccino.jpg', description: 'A classic Italian coffee drink with equal parts espresso, steamed milk, and froth.' },
+  { id: 2, name: 'Latte',      category: 'hot',  price: 130, favorite: true,  image: '/images/latte.jpg',      description: 'A smooth and creamy coffee made with espresso and steamed milk, topped with a light layer of foam.' },
+  { id: 3, name: 'Americano', category: 'iced', price: 180, favorite: true,  image: '/images/americano.jpg',  description: 'A refreshing coffee drink made by pouring a fresh shot of espresso over cold water and ice' }
 ];
 
 // Middleware to log page visits
