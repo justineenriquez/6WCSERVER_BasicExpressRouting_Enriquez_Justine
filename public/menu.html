@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Elite Coffee</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="/">Elite Coffee</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/menu">Menu</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="center">Our Menu</h1>
+    <form id="filter" class="filter panel">
+      <label for="category">Category
+        <select id="category">
+          <option value="">All</option>
+          <option value="hot">Hot</option>
+          <option value="iced">Iced</option>
+        </select>
+      </label>
+      <label for="favorite">Most Favorite
+        <select id="favorite">
+          <option value="">All items</option>
+          <option value="favorite">Most favorite only</option>
+        </select>
+      </label>
+    </form>
+    <section id="menu-grid" class="grid"></section>
+    <script src="/js/menu.js"></script>
+  </main>
+</body>
+</html>
